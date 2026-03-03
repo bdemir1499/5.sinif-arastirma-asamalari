@@ -50,39 +50,33 @@
   <script src="/_sdk/data_sdk.js" type="text/javascript"></script>
  </head>
  <body class="h-full bg-gradient-to-br from-indigo-100 via-purple-50 to-pink-100">
-  <div id="app" class="h-full overflow-auto">
-   <!-- Ana Menü -->
+  <div id="app" class="h-full overflow-auto"><!-- Ana Menü -->
    <div id="main-menu" class="min-h-full p-6">
     <div class="max-w-4xl mx-auto">
      <div class="text-center mb-8">
       <h1 id="app-title" class="text-4xl font-extrabold text-indigo-800 mb-2">📊 İstatistik Araştırma Adımları</h1>
       <p class="text-lg text-indigo-600">5. Sınıf İstatistik Konusu</p>
      </div>
-     <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-      <button onclick="startStage(1)" class="stage-btn bg-white rounded-2xl p-6 shadow-lg border-4 border-blue-400 hover:border-blue-600 text-left">
-       <div class="flex items-center gap-4">
-        <span class="text-4xl">❓</span>
+     <div class="grid grid-cols-1 md:grid-cols-2 gap-6"><button onclick="startStage(1)" class="stage-btn bg-white rounded-2xl p-6 shadow-lg border-4 border-blue-400 hover:border-blue-600 text-left">
+       <div class="flex items-center gap-4"><span class="text-4xl">❓</span>
         <div>
          <h3 class="text-xl font-bold text-blue-700">1. Aşama</h3>
          <p class="text-blue-600">Araştırma Sorusu Oluşturma</p>
         </div>
        </div></button> <button onclick="startStage(2)" class="stage-btn bg-white rounded-2xl p-6 shadow-lg border-4 border-green-400 hover:border-green-600 text-left">
-       <div class="flex items-center gap-4">
-        <span class="text-4xl">📋</span>
+       <div class="flex items-center gap-4"><span class="text-4xl">📋</span>
         <div>
          <h3 class="text-xl font-bold text-green-700">2. Aşama</h3>
          <p class="text-green-600">Veri Toplama</p>
         </div>
        </div></button> <button onclick="startStage(3)" class="stage-btn bg-white rounded-2xl p-6 shadow-lg border-4 border-orange-400 hover:border-orange-600 text-left">
-       <div class="flex items-center gap-4">
-        <span class="text-4xl">📈</span>
+       <div class="flex items-center gap-4"><span class="text-4xl">📈</span>
         <div>
          <h3 class="text-xl font-bold text-orange-700">3. Aşama</h3>
          <p class="text-orange-600">Tablo ve Grafik Oluşturma</p>
         </div>
        </div></button> <button onclick="startStage(4)" class="stage-btn bg-white rounded-2xl p-6 shadow-lg border-4 border-purple-400 hover:border-purple-600 text-left">
-       <div class="flex items-center gap-4">
-        <span class="text-4xl">🔍</span>
+       <div class="flex items-center gap-4"><span class="text-4xl">🔍</span>
         <div>
          <h3 class="text-xl font-bold text-purple-700">4. Aşama</h3>
          <p class="text-purple-600">Görselleri Yorumlama</p>
@@ -97,8 +91,7 @@
    </div><!-- Aşama 1: Araştırma Sorusu -->
    <div id="stage1" class="hidden min-h-full p-6">
     <div class="max-w-4xl mx-auto">
-     <div class="flex items-center justify-between mb-6">
-      <button onclick="goHome()" class="bg-gray-200 hover:bg-gray-300 px-4 py-2 rounded-lg font-semibold">← Ana Menü</button>
+     <div class="flex items-center justify-between mb-6"><button onclick="goHome()" class="bg-gray-200 hover:bg-gray-300 px-4 py-2 rounded-lg font-semibold">← Ana Menü</button>
       <h2 class="text-2xl font-bold text-blue-700">❓ Araştırma Sorusu Oluşturma</h2>
       <div class="w-24"></div>
      </div>
@@ -114,8 +107,7 @@
    </div><!-- Aşama 2: Veri Toplama -->
    <div id="stage2" class="hidden min-h-full p-6">
     <div class="max-w-4xl mx-auto">
-     <div class="flex items-center justify-between mb-6">
-      <button onclick="goHome()" class="bg-gray-200 hover:bg-gray-300 px-4 py-2 rounded-lg font-semibold">← Ana Menü</button>
+     <div class="flex items-center justify-between mb-6"><button onclick="goHome()" class="bg-gray-200 hover:bg-gray-300 px-4 py-2 rounded-lg font-semibold">← Ana Menü</button>
       <h2 class="text-2xl font-bold text-green-700">📋 Veri Toplama</h2>
       <div class="w-24"></div>
      </div>
@@ -139,8 +131,7 @@
    </div><!-- Aşama 3: Tablo ve Grafik -->
    <div id="stage3" class="hidden min-h-full p-6">
     <div class="max-w-5xl mx-auto">
-     <div class="flex items-center justify-between mb-6">
-      <button onclick="goHome()" class="bg-gray-200 hover:bg-gray-300 px-4 py-2 rounded-lg font-semibold">← Ana Menü</button>
+     <div class="flex items-center justify-between mb-6"><button onclick="goHome()" class="bg-gray-200 hover:bg-gray-300 px-4 py-2 rounded-lg font-semibold">← Ana Menü</button>
       <h2 class="text-2xl font-bold text-orange-700">📈 Tablo ve Grafik Oluşturma</h2>
       <div class="w-24"></div>
      </div><!-- Hikaye -->
@@ -149,8 +140,7 @@
       <p class="text-orange-800">Bir öğretmen sınıfındaki 25 öğrenciye "En sevdiğiniz meyve hangisi?" diye sordu. Öğrencilerin cevapları şöyle oldu:</p>
       <p class="text-orange-900 font-semibold mt-2" id="story-data"></p>
      </div>
-     <div class="grid lg:grid-cols-2 gap-6 mb-6">
-      <!-- Çetele Tablosu -->
+     <div class="grid lg:grid-cols-2 gap-6 mb-6"><!-- Çetele Tablosu -->
       <div class="bg-white rounded-2xl p-6 shadow-lg">
        <h3 class="text-xl font-bold text-orange-700 mb-4">📊 Çetele Tablosu</h3>
        <p class="text-gray-600 mb-4 text-sm">Kutulara tıklayarak çetele işareti ekle (5. işaret yatay çizgi olur)</p>
@@ -179,8 +169,7 @@
       </div>
      </div><button onclick="generateCharts()" class="w-full bg-orange-600 hover:bg-orange-700 text-white px-8 py-4 rounded-xl font-bold text-lg mb-6">Grafikleri Oluştur 📊</button> <!-- Grafikler -->
      <div id="charts-section" class="hidden space-y-6">
-      <div class="grid lg:grid-cols-2 gap-6">
-       <!-- Sütun Grafiği -->
+      <div class="grid lg:grid-cols-2 gap-6"><!-- Sütun Grafiği -->
        <div class="bg-white rounded-2xl p-6 shadow-lg chart-container">
         <h3 class="text-xl font-bold text-blue-700 mb-4">📊 Sütun Grafiği</h3>
         <div id="bar-chart" class="h-64 flex items-end justify-around gap-2 border-l-2 border-b-2 border-gray-400 p-4 relative">
@@ -209,8 +198,7 @@
    </div><!-- Aşama 4: Yorumlama -->
    <div id="stage4" class="hidden min-h-full p-6">
     <div class="max-w-4xl mx-auto">
-     <div class="flex items-center justify-between mb-6">
-      <button onclick="goHome()" class="bg-gray-200 hover:bg-gray-300 px-4 py-2 rounded-lg font-semibold">← Ana Menü</button>
+     <div class="flex items-center justify-between mb-6"><button onclick="goHome()" class="bg-gray-200 hover:bg-gray-300 px-4 py-2 rounded-lg font-semibold">← Ana Menü</button>
       <h2 class="text-2xl font-bold text-purple-700">🔍 Görselleri Yorumlama</h2>
       <div class="w-24"></div>
      </div>
@@ -400,7 +388,7 @@
     
     function checkStage1() {
       let correct = 0;
-      let total = stage1Questions.filter(q => q.isResearch).length;
+      const researchCount = stage1Questions.filter(q => q.isResearch).length;
       
       stage1Questions.forEach((q, i) => {
         const checkbox = document.getElementById(`q1-${i}`);
@@ -409,9 +397,9 @@
         if (checkbox.checked === q.isResearch) {
           correct++;
           card.classList.remove('border-red-400', 'bg-red-50');
-          card.classList.add('border-green-400', 'bg-green-50');
+          card.classList.add('border-green-400', 'bg-green-50', 'correct-answer');
         } else {
-          card.classList.remove('border-green-400', 'bg-green-50');
+          card.classList.remove('border-green-400', 'bg-green-50', 'correct-answer');
           card.classList.add('border-red-400', 'bg-red-50');
         }
       });
@@ -422,19 +410,19 @@
       const percentage = Math.round((correct / stage1Questions.length) * 100);
       let passed = false;
       
-      if (percentage >= 80) {
+      if (percentage >= 75) {
         feedback.className = 'mt-6 bg-green-100 rounded-xl p-4 border-2 border-green-400';
         feedback.innerHTML = `<p class="text-green-800 font-bold">🎉 Harika! ${correct}/${stage1Questions.length} doğru (${percentage}%)</p><p class="text-green-700 mt-2">Araştırma sorularını çok iyi ayırt ediyorsun!</p><p class="text-green-700 mt-3 text-sm">2. Aşamaya otomatik geçiliyor...</p>`;
         passed = true;
-      } else if (percentage >= 50) {
+      } else if (percentage >= 60) {
         feedback.className = 'mt-6 bg-yellow-100 rounded-xl p-4 border-2 border-yellow-400';
-        feedback.innerHTML = `<p class="text-yellow-800 font-bold">👍 İyi! ${correct}/${stage1Questions.length} doğru (${percentage}%)</p><p class="text-yellow-700 mt-2">Biraz daha pratik yaparsan daha iyi olacak!</p>`;
+        feedback.innerHTML = `<p class="text-yellow-800 font-bold">👍 İyi! ${correct}/${stage1Questions.length} doğru (${percentage}%)</p><p class="text-yellow-700 mt-2">Biraz daha dikkat et ve tekrar dene!</p>`;
       } else {
         feedback.className = 'mt-6 bg-red-100 rounded-xl p-4 border-2 border-red-400';
         feedback.innerHTML = `<p class="text-red-800 font-bold">💪 Tekrar dene! ${correct}/${stage1Questions.length} doğru (${percentage}%)</p><p class="text-red-700 mt-2">Araştırma sorusu bir gruba yönelik olmalı ve cevabı kişiden kişiye değişebilmeli!</p>`;
       }
       
-      document.getElementById('stage1-score').textContent = `Puan: ${correct}/${stage1Questions.length}`;
+      document.getElementById('stage1-score').textContent = `Puan: ${correct}/${stage1Questions.length} (Hedef: En az 15 doğru)`;
       
       if (passed) {
         setTimeout(() => startStage(2), 2000);
@@ -492,9 +480,9 @@
         if (checkbox.checked === m.isCorrect) {
           correct++;
           div.classList.remove('bg-red-100');
-          div.classList.add('bg-green-100');
+          div.classList.add('bg-green-100', 'scale-105');
         } else {
-          div.classList.remove('bg-green-100');
+          div.classList.remove('bg-green-100', 'scale-105');
           div.classList.add('bg-red-100');
         }
       });
@@ -505,9 +493,9 @@
         if (checkbox.checked === s.isCorrect) {
           correct++;
           div.classList.remove('bg-red-100');
-          div.classList.add('bg-green-100');
+          div.classList.add('bg-green-100', 'scale-105');
         } else {
-          div.classList.remove('bg-green-100');
+          div.classList.remove('bg-green-100', 'scale-105');
           div.classList.add('bg-red-100');
         }
       });
@@ -518,19 +506,19 @@
       const percentage = Math.round((correct / total) * 100);
       let passed = false;
       
-      if (percentage >= 80) {
+      if (percentage >= 75) {
         feedback.className = 'mt-6 bg-green-100 rounded-xl p-4 border-2 border-green-400';
         feedback.innerHTML = `<p class="text-green-800 font-bold">🎉 Mükemmel! ${correct}/${total} doğru (${percentage}%)</p><p class="text-green-700 mt-2">Veri toplama yöntemlerini çok iyi biliyorsun!</p><p class="text-green-700 mt-3 text-sm">3. Aşamaya otomatik geçiliyor...</p>`;
         passed = true;
-      } else if (percentage >= 50) {
+      } else if (percentage >= 60) {
         feedback.className = 'mt-6 bg-yellow-100 rounded-xl p-4 border-2 border-yellow-400';
-        feedback.innerHTML = `<p class="text-yellow-800 font-bold">👍 İyi gidiyorsun! ${correct}/${total} doğru (${percentage}%)</p>`;
+        feedback.innerHTML = `<p class="text-yellow-800 font-bold">👍 İyi gidiyorsun! ${correct}/${total} doğru (${percentage}%)</p><p class="text-yellow-700 mt-2">Biraz daha dikkatli bak ve tekrar dene!</p>`;
       } else {
         feedback.className = 'mt-6 bg-red-100 rounded-xl p-4 border-2 border-red-400';
-        feedback.innerHTML = `<p class="text-red-800 font-bold">💪 Biraz daha düşün! ${correct}/${total} doğru (${percentage}%)</p>`;
+        feedback.innerHTML = `<p class="text-red-800 font-bold">💪 Biraz daha düşün! ${correct}/${total} doğru (${percentage}%)</p><p class="text-red-700 mt-2">Hangi yöntemler gerçekten veri toplamak için kullanılır?</p>`;
       }
       
-      document.getElementById('stage2-score').textContent = `Puan: ${correct}/${total}`;
+      document.getElementById('stage2-score').textContent = `Puan: ${correct}/${total} (Hedef: En az ${Math.ceil(total * 0.75)} doğru)`;
       
       if (passed) {
         setTimeout(() => startStage(3), 2000);
@@ -927,9 +915,9 @@
         if (selected && parseInt(selected.value) === q.correct) {
           correct++;
           card.classList.remove('border-red-400', 'bg-red-50');
-          card.classList.add('border-green-400', 'bg-green-50');
+          card.classList.add('border-green-400', 'bg-green-50', 'correct-answer');
         } else {
-          card.classList.remove('border-green-400', 'bg-green-50');
+          card.classList.remove('border-green-400', 'bg-green-50', 'correct-answer');
           card.classList.add('border-red-400', 'bg-red-50');
         }
       });
@@ -939,19 +927,19 @@
       
       const percentage = Math.round((correct / questions.length) * 100);
       
-      if (percentage >= 80) {
+      if (percentage >= 75) {
         feedback.className = 'mt-6 bg-green-100 rounded-xl p-4 border-2 border-green-400';
         feedback.innerHTML = `<p class="text-green-800 font-bold">🎉 Tebrikler! ${correct}/${questions.length} doğru (${percentage}%)</p><p class="text-green-700 mt-2">Grafikleri çok iyi yorumluyorsun!</p><p class="text-green-700 mt-3 text-sm">🏆 Tüm aşamaları tamamladın! Ana menüye dönebilirsin.</p>`;
-      } else if (percentage >= 50) {
+      } else if (percentage >= 60) {
         feedback.className = 'mt-6 bg-yellow-100 rounded-xl p-4 border-2 border-yellow-400';
-        feedback.innerHTML = `<p class="text-yellow-800 font-bold">👍 Fena değil! ${correct}/${questions.length} doğru (${percentage}%)</p><p class="text-yellow-700 mt-2">Grafiklere daha dikkatli bak!</p>`;
+        feedback.innerHTML = `<p class="text-yellow-800 font-bold">👍 Fena değil! ${correct}/${questions.length} doğru (${percentage}%)</p><p class="text-yellow-700 mt-2">Grafiklere daha dikkatli bak ve tekrar dene!</p>`;
       } else {
         feedback.className = 'mt-6 bg-red-100 rounded-xl p-4 border-2 border-red-400';
-        feedback.innerHTML = `<p class="text-red-800 font-bold">💪 Tekrar dene! ${correct}/${questions.length} doğru (${percentage}%)</p><p class="text-red-700 mt-2">Önce 3. Aşamada tabloları oluştur, sonra soruları cevapla!</p>`;
+        feedback.innerHTML = `<p class="text-red-800 font-bold">💪 Tekrar dene! ${correct}/${questions.length} doğru (${percentage}%)</p><p class="text-red-700 mt-2">Veriler ve grafikler hakkında daha dikkatli düşün!</p>`;
       }
       
-      document.getElementById('stage4-score').textContent = `Puan: ${correct}/${questions.length}`;
+      document.getElementById('stage4-score').textContent = `Puan: ${correct}/${questions.length} (Hedef: En az ${Math.ceil(questions.length * 0.75)} doğru)`;
     }
   </script>
- <script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'9d6a6fe61433c546',t:'MTc3MjU1OTc0MC4wMDAwMDA='};var a=document.createElement('script');a.nonce='';a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
+ <script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'9d6c102633dfc546',t:'MTc3MjU3Njc4OS4wMDAwMDA='};var a=document.createElement('script');a.nonce='';a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
 </html>
